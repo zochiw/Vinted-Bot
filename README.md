@@ -32,6 +32,7 @@ Avoir créé un bot, avoir son token et l'avoir invité dans son serveur
 Etape 1: telecharger le code complet et ouvrir un terminal dans le projet
 Etape 2: installer les dépendances
 npm i
+
 Etape 3: configurer le bot
 a) Il faut ajouter le token du bot discord dans config.json :
 
@@ -51,7 +52,7 @@ url est l'url de la recherche vinted (il suffit de copier-coller l'url de la rec
 frequency est le délais en millisecondes entre deux recherches sur cet url
 filterWords est une liste de mots (entre guillemets séparés par des virgules) qui permettent d'exclure les annonces qui ont ces mots dans leur titre.
 [
-  {
+  ```{
     "channelId": "123456789012345678",
     "channelName": "test1",
     "url": "https://www.vinted.fr/catalog?brand_ids[]=53",
@@ -60,14 +61,15 @@ filterWords est une liste de mots (entre guillemets séparés par des virgules) 
   },
   {
     ...
-  }
+  }```
 ]
 c) Il faut ajouter les tokens de session à tokens.json :
 
-{
+```{
   "access_token": "xxxxxxxx",
   "refresh_token": "xxxxxxx",
   "xcsrf_token": "xxxxxx"
-}
+}```
+
 Etape 4: lancer le bot
-node main.js
+```node main.js```
